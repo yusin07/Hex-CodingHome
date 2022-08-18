@@ -1,0 +1,17 @@
+@mixin screen-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin text-gradient {
+    background: linear-gradient(180deg, $light-blue, $primary);
+    background-clip: text;
+    color: transparent;
+}

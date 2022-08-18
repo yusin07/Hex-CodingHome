@@ -1,0 +1,9 @@
+.btn-gradient {
+    color: $white;
+    background: $gradient;
+    border-width: 0;
+
+    &:hover {
+        background: $gradient-hover;
+    }
+}

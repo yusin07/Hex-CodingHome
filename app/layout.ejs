@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>
+		<%- title %>
+	</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="sticky-top">
+		<div class="navbar navbar-expand-md navbar-dark bg-dark py-4 position-relative">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<picture>
+						<source srcset="./assets/images/logo.svg" media="(min-width: 768px)" height="42px">
+						<img src="./assets/images/logo2.svg" alt="logo" height="24px" class="d-block">
+					</picture>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="material-symbols-outlined text-primary">drag_handle</span>
+				</button>
+				<div class="collapse navbar-collapse mt-6 mt-md-0 justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center">
+						<li class="nav-item">
+							<a class="nav-link px-md-4" aria-current="page" href="#">首頁</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-md-4" href="#">課程介紹</a>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-link btn-focus-none w-100 px-0 py-2 border-0 justify-content-center d-flex align-items-center px-md-4">
+								<span class="material-symbols-outlined me-2">account_circle</span>登入
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="d-flex position-absolute navbar-underline">
+				<div class="w-50 bg-primary"></div>
+				<div class="w-50 bg-light-blue"></div>
+			</div>
+		</div>
+	</nav>
+
+	<%- contents %>
+
+	<footer class="p-3 bg-dark3">
+		<p class="font-monospace fs-7 text-gray text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+	</footer>
+
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		// init Swiper:
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			loop: true,
+			grabCursor : true,
+		
+			// If we need pagination
+			pagination: {
+			el: '.swiper-pagination',
+			clickable: true
+			},
+		
+			// Navigation arrows
+			navigation: {
+			nextEl: '.swiper-button-m-next',
+			prevEl: '.swiper-button-m-prev',
+			},
+		
+		});
+
+	</script>
+</body>
+
+</html>
