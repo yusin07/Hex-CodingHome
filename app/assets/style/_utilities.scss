@@ -1,0 +1,26 @@
+.decorate-line {
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    margin-top: $spacer;
+
+}
+
+.text-gradient {
+    @include text-gradient;
+}
+
+
+.round-24 {
+    border-radius: 24px;
+}
+
+.bg-shadow {
+    box-shadow: 0 0 32px #00000058;
+}
+
+.bg-md-dark3 {
+    @include screen-md {
+        background: $dark3;
+    }
+}

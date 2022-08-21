@@ -14,12 +14,12 @@
             background-image: url(../images/bg_home.jpg);
             background-size: cover;
             padding-top: 124px;
-            padding-bottom: 124px;
+            padding-bottom: 140px;
         }
     }
 
     &-box {
-        max-width: 620px;
+        max-width: 650px;
         margin: 0 auto;
     }
 
@@ -59,7 +59,6 @@
 }
 
 .service {
-    box-shadow: 0 0 32px $dark2;
 
     .card {
         background-color: $dark2;
@@ -267,7 +266,7 @@
 
 }
 
-.share2 {
+.share {
     &-img {
         position: relative;
 
@@ -286,6 +285,7 @@
         background-color: $white;
         border-radius: 24px 24px 24px 0;
         padding: 32px;
+        box-shadow: 0 4px 20px #49475514;
         z-index: 5;
 
         strong {
@@ -339,16 +339,10 @@
     }
 }
 
-// object
+.join {
+    border-radius: 24px;
 
-.decorate-line {
-    width: 50px;
-    height: 3px;
-    background-color: $primary;
-    margin-top: $spacer;
-
-}
-
-.text-gradient {
-    @include text-gradient;
+    span {
+        font-size: 80px;
+    }
 }

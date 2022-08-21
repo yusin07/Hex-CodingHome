@@ -7,10 +7,17 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // customize css
-@import "./helpers/base";
-@import "./mixin";
-@import "./icon";
-@import "./button";
+@import "./helpers/base.scss";
+@import "./mixin.scss";
+@import "./utilities.scss";
+@import "./date-picker.scss";
+@import "./icon.scss";
+@import "./button.scss";
 @import "./swiper.scss";
+@import "./list.scss";
+@import "./stepbar.scss";
 @import "./layout/navbar.scss";
+
+// pages
 @import "./pages/index.scss";
+@import "./pages/others.scss";

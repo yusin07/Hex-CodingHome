@@ -1,0 +1,9 @@
+.list-square-primary {
+    list-style: square;
+    padding-left: 13px;
+    list-style-position: outside;
+    li::marker {
+        color: $primary;
+        font-size: 5px;
+    }
+}

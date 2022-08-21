@@ -1,0 +1,62 @@
+.course-card {
+    position: relative;
+    @include screen-md {
+        margin-right: -32px;
+        margin-top: 160px;
+    }
+
+    @include screen-lg {
+        margin-right: -48px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 12px 0 12px;
+        border-color: $dark transparent transparent transparent;
+        right: calc(50% - 12px);
+        top: 100%;
+
+        @include screen-md {
+            border-width: 12px 0 12px 12px;
+            border-color: transparent transparent transparent $dark;
+            right: -12px;
+            top: calc(50% - 12px);
+        }
+    }
+}
+
+.purchase-form {
+    padding: 24px;
+
+    @include screen-md {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 32px;
+        padding-left: 90px;
+        margin-left: -32px;
+    }
+
+    @include screen-lg {
+        padding-left: 114px;
+        margin-left: -48px;
+    }
+
+}
+
+.purchase-btn-group {
+    button {
+        width: calc(50% - 4px);
+
+        @include screen-lg {
+            width: initial;
+        }
+    }
+}
+
+.success-icon {
+    font-size: 44px;
+}
