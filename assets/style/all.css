@@ -14226,4 +14226,12 @@ img {
   font-size: 44px;
 }
 
+.full-screen {
+  height: calc(100vh - 140px - 88px);
+}
+
+.top-114 {
+  top: 114px;
+}
+
 /*# sourceMappingURL=all.css.map */
